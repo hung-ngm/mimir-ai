@@ -19,22 +19,19 @@ export async function POST(request: Request) {
     }));
 
     // Get the user's query from the request body
-    const { query } = await request.json();
+    const { messages } = await request.json();
 
-    const messages = [
+    const reqMessages = [
         {
             "role": "system",
             "content": "You are analyzing song lyrics dataset. The data is " + records,
         },
-        {
-            "role": "user",
-            "content": query,
-        },
+        ...messages
     ];
 
     const payloadInf = {
         "model": "meta-llama/Llama-3.2-11B-Vision-Instruct-Turbo",
-        "messages": messages,
+        "messages": reqMessages,
     };
 
     const responseInf = await fetch(
