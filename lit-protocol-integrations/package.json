@@ -1,0 +1,31 @@
+{
+  "name": "lit-protocol-integrations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lit-protocol/auth-helpers": "^6.2.2",
+    "@lit-protocol/constants": "^6.4.8",
+    "@lit-protocol/lit-auth-client": "^6.2.2",
+    "@lit-protocol/lit-node-client": "^6.2.2",
+    "@lit-protocol/types": "^6.2.2",
+    "csv-parse": "^5.5.6",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.1",
+    "llamaindex": "^0.7.10",
+    "node-fetch": "^3.3.2",
+    "siwe": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/csv-parse": "^1.2.5",
+    "@types/node": "^22.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
