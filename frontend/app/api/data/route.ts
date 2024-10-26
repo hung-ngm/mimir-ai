@@ -50,8 +50,6 @@ export async function POST(request: Request) {
     );
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const resultInf: any = await responseInf.json();
-    const answer = resultInf.choices[0].message.content;
-
-    return NextResponse.json({ answer });
+    return NextResponse.json(resultInf);
 }
 
